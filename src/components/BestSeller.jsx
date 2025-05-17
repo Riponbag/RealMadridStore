@@ -8,7 +8,7 @@ const BestSeller = () => {
   const [bestseller, setBestSeller] = useState([]);
 
   useEffect(() => {
-    const bestProduct = products.filter((item) => item.bestseller);
+    const bestProduct = products.filter((item) => (item.bestseller));
     setBestSeller(bestProduct.slice(0, 5));
   }, [products]);
 
@@ -17,8 +17,7 @@ const BestSeller = () => {
       <div className='text-center text-3xl py-8'>
         <Title text1={'BEST'} text2={'SELLERS'} />
         <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus tempora fuga odit saepe. Dolor modi doloremque unde optio est, maxime quibusdam voluptatum accusantium at, eaque animi impedit blanditiis? Perferendis, et!
-        </p>
+        "Worn with pride, played with heart — this jersey tells your story before you take the field.</p>
       </div>
 
       <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6'>

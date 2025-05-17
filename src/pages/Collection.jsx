@@ -71,7 +71,7 @@ const Collection = () => {
 
  useEffect(()=>{
   applyFilter();
- },[category,subCategory,search,showSearch])
+ },[category,subCategory,search,showSearch,products])
 
  useEffect(()=>{
     sortProduct();
@@ -94,9 +94,9 @@ const Collection = () => {
             <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Women'} onChange={toggleCategory}/>Women
             </p>
-            <p className='flex gap-2'>
+            {/* <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory}/>Kids
-            </p>
+            </p> */}
           </div>
         </div>
         {/* Subcategory filter */}
@@ -109,9 +109,9 @@ const Collection = () => {
             <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Bottomwear'}onChange={toggleSubCategory}/>Bottomwear
             </p>
-            <p className='flex gap-2'>
+            {/* <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Winterwear'}onChange={toggleSubCategory}/>Winterwear
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
